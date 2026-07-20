@@ -28,3 +28,41 @@
   aspect-ratio: 984 / 615;
   object-fit: cover;
 }
+
+@media screen and (max-width: 1024px) {
+  .lead {
+    width: 100%;
+  }
+
+  .lead__title {
+    width: calc(100% - 48px);
+    font-size: 75px;
+    line-height: 1.05;
+  }
+
+  .lead__subtitle {
+    width: calc(100% - 48px);
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .lead {
+    margin-top: 50px;
+  }
+
+  .lead__title {
+    width: calc(100% - 32px);
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .lead__subtitle {
+    width: calc(100% - 32px);
+    margin-top: 16px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
