@@ -96,15 +96,15 @@
   display: inline-block;
   width: fit-content;
   max-width: 100%;
-  margin-top: 48px;
-  padding: 13px 20px;
+  margin-top: 16px;
+  padding: 13px 15px;
 
   color: #fff;
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   box-shadow: 5px 5px 10px rgb(0 0 0 / 25%);
   border-radius: 4px;
 
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.22;
   text-align: center;
@@ -130,6 +130,7 @@
 @media screen and (max-width: 1024px) {
   .place {
     grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+    grid-template-rows: auto 340px auto;
     column-gap: 28px;
     margin-bottom: 72px;
   }
@@ -155,7 +156,7 @@
   }
 
   .place__button {
-    margin-top: 48px;
+    margin-top: 24px;
     padding: 13px 15px;
     font-size: 14px;
   }
@@ -166,6 +167,7 @@
 @media screen and (max-width: 544px) {
   .place {
     grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 1fr;
     grid-template-areas:
       "title"
       "artist"
